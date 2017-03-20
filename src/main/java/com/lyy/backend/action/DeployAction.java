@@ -9,26 +9,26 @@ import java.io.InputStreamReader;
 /**
  * Created by fanshuai on 17/3/20.
  */
-@Controller
+@Controller("/backend/deploy/")
 public class DeployAction {
 
     @RequestMapping(value = "/autoDeploy")
-    public String autoDeploy(String projectName,String ip,String tomcatHome){
+    public String autoDeploy(){
         try {
-            String cmdstring = "chmod a+x test.sh";
-            Process proc = Runtime.getRuntime().exec(cmdstring);
-            proc.waitFor(); //阻塞，直到上述命令执行完
-            cmdstring = "bash test.sh"; //这里也可以是ksh等
-            proc = Runtime.getRuntime().exec(cmdstring);
-            // 注意下面的操作
-            string ls_1;
-            BufferedReader bufferedReader = new BufferedReader( new InputStreamReader(proc.getInputStream());
-            while ( (ls_1=bufferedReader.readLine()) != null);
-            bufferedReader.close();
-            proc.waitFor();
+
         }catch (Exception e){
 
         }
+        return "/backend/deploy";
+    }
 
+    @RequestMapping(value = "/doDeploy")
+    public String doDeploy(String projectName,String ip){
+        try {
+
+        }catch (Exception e){
+
+        }
+        return "/backend/deploy";
     }
 }
