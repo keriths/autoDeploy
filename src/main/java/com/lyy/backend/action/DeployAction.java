@@ -9,26 +9,26 @@ import java.io.InputStreamReader;
 /**
  * Created by fanshuai on 17/3/20.
  */
-@Controller("/backend/deploy/")
+@Controller()
 public class DeployAction {
 
-    @RequestMapping(value = "/autoDeploy")
+    @RequestMapping(value = "/backend/deploy/autoDeploy")
     public String autoDeploy(){
         try {
 
         }catch (Exception e){
 
         }
-        return "/backend/deploy";
+        return "backend/deploy";
     }
 
-    @RequestMapping(value = "/doDeploy")
+    @RequestMapping(value = "/backend/deploy/doDeploy")
     public String doDeploy(String projectName,String ip){
         try {
 
         }catch (Exception e){
 
         }
-        return "/backend/deploy";
+        return "backend/deploy";
     }
 }

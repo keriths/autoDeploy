@@ -18,7 +18,7 @@
         <div title="菜单1" class="firstMenu">
             <ul class="easyui-tree">
                 <li>
-                    <a  href="/backend/deploy/autoDeploy" >百度</a>
+                    <a  href="/backend/deploy/autoDeploy" >部署</a>
                 </li>
                 <li>
                     <a  href="http://www.dianping.com" >点评</a>
